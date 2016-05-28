@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman Game JV</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" >
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+</head>
+
+<body>
+
+  <audio id="audioWin">
+    <source src="assets/sounds/win.mp3" type="audio/ogg">
+    <source src="assets/sounds/win.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <audio id="audioLoss">
+    <source src="assets/sounds/loss.mp3" type="audio/ogg">
+    <source src="assets/sounds/loss.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container-fluid">
+    <div class="row content">
+      <div class="col-sm-5 sidenav" id="left">
+        <h1>HANGMAN GAME</h1>
+        <div class="container">
+          <button id="reset">Play again</button>
+        </div>
+        <div class="hangmanPic">
+          <img id="hangPic" src="assets/images/play.jpg" alt="Play">
+        </div>
+      </div>
+
+      <div class="col-sm-7" id="right">
+        <p><h3>Use the alphabet below to guess the word </h3></p>
+        <div id="buttons">
+        </div>  
+        <p id="catagoryName"></p>
+        <div id="hold">
+        </div>
+        <p id="mylives"></p>
+      </div>
+    </div>
+  </div>
+
+<footer class="container-fluid">
+  <h6>&copy; Copyright 2016 Jaime Valladolid</h6>
+</footer>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
