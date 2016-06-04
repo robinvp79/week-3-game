@@ -21,7 +21,6 @@ window.onload = function () {
   var showClue = document.getElementById("clue");
 
 
-
   // create alphabet ul
   var buttons = function () {
     myButtons = document.getElementById('buttons');
@@ -60,7 +59,7 @@ window.onload = function () {
       guess.setAttribute('class', 'guess');
       if (word[i] === "-") {
         guess.innerHTML = "-";
-        space = 1;
+        space++;
       } else {
         guess.innerHTML = "_";
       }
